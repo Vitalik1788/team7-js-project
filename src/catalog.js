@@ -1,7 +1,8 @@
-import './JS/header.js';
-import './js/hero.js';
-import './JS/catalog-page.js';
-import './JS/modal-trailer.js';
+import './javascript/stars-rating';
+import './javascript/header';
+import './javascript/hero.js';
+import './javascript/catalog-page.js';
+import './javascript/modal-trailer.js';
 
-import './JS/global-listener.js';
+import './javascript/global-listener.js';
 

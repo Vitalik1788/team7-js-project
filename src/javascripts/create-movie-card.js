@@ -1,8 +1,8 @@
-import { refs } from '../JS/catalog/components/refs';
+import {refs} from '../javascript/catalog/components/refs'
 import defaultImg from '../images/default.jpg';
-import starsRating from '../JS/stars-rating';
-import { validateGenres } from '../JS/weekly-trends-genres';
-import { openModalAboutFilm } from '../JS/movieModal';
+import starsRating from '../javascript/stars-rating';
+import { validateGenres } from '../javascript/weekly-trends-genres';
+import { openModalAboutFilm } from '../javascript/movieModal';
 
 export async function createMovieCard(data) {
   const genresData = JSON.parse(localStorage.getItem('genres'));
