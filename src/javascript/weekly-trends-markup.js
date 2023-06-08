@@ -53,7 +53,6 @@ export function createMarkup(films) {
       .insertAdjacentHTML('beforeend', finalMarkup);
 
     const filmList = document.querySelector('.listListener');
-
     filmList.addEventListener('click', event => {
       const li = event.target.closest('.card-item');
 

@@ -154,8 +154,8 @@ function createLibraryMarkup(libraryInParts) {
       })
       .join('');
 
-    libraryRef.innerHTML = markup;
-  }
+      libraryRef.innerHTML = markup;
+    }
 }
 
 // const filmList = document.querySelector('.lib-btn-cont');

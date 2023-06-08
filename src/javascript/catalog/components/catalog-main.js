@@ -1,8 +1,8 @@
 // Імпорти
-import { refs } from './catalog/components/refs';
-import ApiService from './catalog/components/api_service';
-import { createErrorMarkup } from './create-error-markup';
-import { createMovieCard } from './create-movie-card';
+import { refs } from './refs';
+import ApiService from './api_service';
+import { createErrorMarkup } from '../../create-error-markup';
+import { createMovieCard } from '../../create-movie-card';
 
 // Змінні
 const apiService = new ApiService();
