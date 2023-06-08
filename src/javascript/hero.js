@@ -1,5 +1,4 @@
 import starsRating from './stars-rating';
-import { getMovieId } from './modal-trailer';
 
 const API_KEY = '58fde9f9a3392c3dbee86a1f2142354e';
 const RANDOM_NUMBER = Math.floor(Math.random() * (19 - 0 + 1)) + 0;
