@@ -1,8 +1,7 @@
 import './javascript/stars-rating';
-import './javascript/header.js';
-import './javascript/hero.js';
-import { showWeeklyTrends } from './javascript/weekly-trends-main.js';
-window.addEventListener('load', showWeeklyTrends);
+import './javascript/header';
+import './javascript/hero';
+import './javascript/weekly-trends-main';
 
 import './upcoming/upcoming';
 import './javascript/modal-trailer';
