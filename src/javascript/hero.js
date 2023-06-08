@@ -87,7 +87,7 @@ function createSuccessFetchBtnMurkUp(filmId) {
   heroTrailertBtn.textContent = 'Watch Trailer';
   heroTrailertBtn.classList.add('css-btn-trailer', 'watch-trailer-button');
   heroTrailertBtn.setAttribute('type', 'button');
-  heroTrailertBtn.setAttribute('trailer-id', `${filmId}`);
+  heroTrailertBtn.setAttribute('trailer-id', filmId);
 
   refs.heroBtnDiv.append(heroTrailertBtn);
 
