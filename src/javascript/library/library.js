@@ -30,10 +30,7 @@ function getLibrarylistInParts(library) {
   console.log(totalLiberyLength);
 
   lostEl = firstEl + 6;
-  console.log(firstEl);
-  console.log(lostEl);
-  console.log(totalLiberyLength);
-  console.log(totalLiberyLength - totalElementInList);
+ 
 
   const libraryInParts = library.slice(firstEl, lostEl);
   console.log(libraryInParts);
