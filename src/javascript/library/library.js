@@ -5,7 +5,6 @@ import { STORAGE_KEY } from '../../fetch/api_key';
 
 const libraryRef = document.querySelector('.library-card-list');
 const btnLib = document.querySelector('.btn');
-console.log(document.querySelector('.btn'));
 
 window.addEventListener('DOMContentLoaded', () => {
   const library = JSON.parse(localStorage.getItem(STORAGE_KEY)) || [];
@@ -16,24 +15,20 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 btnLib?.addEventListener('click', function (event) {
-  console.log('AAAAAAA');
   getLibrarylistInParts(library);
   firstEl += 6;
   totalElementInList += 6;
 });
-console.log(btnLib);
 
 let totalElementInList = 0;
 let firstEl = 0;
 function getLibrarylistInParts(library) {
   const totalLiberyLength = library.length;
-  console.log(totalLiberyLength);
 
   lostEl = firstEl + 6;
  
 
   const libraryInParts = library.slice(firstEl, lostEl);
-  console.log(libraryInParts);
   if (totalLiberyLength - totalElementInList <= 6) {
     createLibraryMarkup(libraryInParts);
   } else {
@@ -47,11 +42,8 @@ function getLibrarylistInParts(library) {
 
 export function handleFilm(e) {
   const id = e.target.dataset.id;
-  // console.log('btnLib', btnLib);
-  console.log(e.target);
 
   if (e.target.hasAttribute('data-add')) {
-    console.log('data-add');
 
     // btnLib.removeAttribute('data-add');
     // btnLib.setAttribute('data-remove', '');
@@ -62,7 +54,6 @@ export function handleFilm(e) {
 
     //
   } else if (e.target.hasAttribute('data-remove')) {
-    console.log('data-remove');
 
     e.target.removeAttribute('data-remove');
     e.target.setAttribute('data-add', '');
@@ -124,7 +115,6 @@ export function deleteCardLibrary(id) {
 }
 
 function createLibraryMarkup(libraryInParts) {
-  // console.log(library);
   if (libraryInParts.length === 0) {
     libraryRef.innerHTML = `<div class="library-info library-info-container">
                               <p class="library-info-text">
