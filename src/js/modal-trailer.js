@@ -43,7 +43,7 @@ function playTrailer(movieId) {
 
       const modal = document.getElementById('modal');
       modal.style.display = 'block';
-      disableScroll();
+      disableScroll(); 
     })
     .catch(() => {
       showModalError();
@@ -79,7 +79,7 @@ function showModalError() {
   const closeButton = modalContent.querySelector('.close-button');
   closeButton.addEventListener('click', () => {
     modal.style.display = 'none';
-    enableScroll();
+    enableScroll(); 
   });
 
   closeButton.classList.add('close-button'); // Додати клас до кнопки
@@ -112,6 +112,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
   closeButton.addEventListener('click', () => {
     modal.style.display = 'none';
-    enableScroll();
+    enableScroll(); 
   });
 });
