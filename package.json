@@ -2,10 +2,10 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://Vitalik1788.github.io/team7-js-project",
+  "homepage": "https://Vitalik1788.github.io/JS-team-group-project-07",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /team7-js-project/"
+    "build": "parcel build src/*.html --public-url /JS-team-group-project-07/"
   },
   "repository": {
     "type": "git",
@@ -20,9 +20,7 @@
   "dependencies": {
     "axios": "^1.4.0",
     "lodash.debounce": "^4.0.8",
-    "modern-normalize": "^1.1.0",
-    "switcher-js2": "^1.6.3",
-    "tui-pagination": "^3.4.1"
+    "modern-normalize": "^1.1.0"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.6.0",
