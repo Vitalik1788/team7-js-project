@@ -1,15 +1,17 @@
 @import '../../node_modules/modern-normalize/modern-normalize.css';
+@import './loader.css';
 @import './dropdown.css';
 @import './header.css';
 @import './hero.css';
 @import './weekly-trands.css';
-@import './catalog.css';
 @import './upcoming.css';
 @import './footer.css';
 @import './library.css';
+@import './catalog.css';
 @import './movie-modal.css';
 @import './modal-trailer.css';
 @import './stars-rating.css';
+@import './scroll-up.css';
 
 .main-container {
   padding-left: 20px;
