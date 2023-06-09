@@ -39,7 +39,10 @@ function renderWeeklyTrends(page) {
 function handleMoviesData(data) {
   totalPages = data.total_pages;
   if (totalPages > 30) {
-    totalPages = 30;
+    totalPages = currentPage + 29;
+    if (totalPages > 99) {
+      totalPages = 100;
+    }
   }
 
   createMovieCard(data);
@@ -209,5 +212,4 @@ function onPrevPage() {
     apiService.decrementPage();
     renderWeeklyTrends(currentPage);
   }
-  return;
 }
